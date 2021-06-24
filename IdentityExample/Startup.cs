@@ -27,7 +27,7 @@ namespace IdentityExample
             //             config.Cookie.Name = "WebNetCookie";
             //             config.LoginPath = "/Home/Authenticate";
             //         });
-            //services.AddControllersWithViews();
+            services.AddControllersWithViews();
 
         }
 
@@ -43,7 +43,7 @@ namespace IdentityExample
 
             app.UseRouting();
 
-            app.UseAuthorization();
+           // app.UseAuthorization();
             app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
